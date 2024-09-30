@@ -1,0 +1,243 @@
+[
+  {
+      "ville": "Brizambourgh",
+      "latitude": 45.82020,
+      "longitude": -0.47849,
+      "personne_interviewee": "le Maire Didier Cosset",
+      "en_presentiel": true,
+      "label": " 'Villages d’avenir'. Ce programme vise à accompagner les petites communes dans leur développement.",
+      "lien": "https://www.brizambourg.fr/",
+      "citation":"'On manque de bénévolat'"
+  },
+  {
+      "ville": "Clion-sur-Seugne",
+      "latitude": 45.48073,
+      "longitude": -0.50073,
+      "personne_interviewee": "la Maire Isabelle Tardy",
+      "en_presentiel": false,
+      "label": "'Village de pierres et d’eau'. Ce label met en avant le patrimoine architectural et naturel remarquable.",
+      "lien": "https://www.clion-sur-seugne.fr/",
+      "citation": " 'Le rôle de la mairie, c'est un rôle de moteur.' "
+  },
+  {
+      "ville": "La Ronde",
+      "latitude": 46.29893,
+      "longitude": -0.81118,
+      "personne_interviewee": "Une élue, Anne Appercé, 1ère adjointe de la Vie associative et des fêtes et cérémonies.",
+      "en_presentiel": true,
+      "label": "",
+      "lien": "https://www.laronde17.fr/",
+      "citation":"'Le bénévolat est essentiel. Beaucoup d'associations ne pourraient pas fonctionner sans l'aide des bénévoles. Le bénévolat permet de créer des liens et de rencontrer des gens.' "
+  },
+  {
+      "ville": "Nieul-le-Viroul",
+      "latitude": 45.40834,
+      "longitude": -0.53176,
+      "personne_interviewee": "le Maire Christophe Pavie.",
+      "en_presentiel": false,
+      "label": "",
+      "lien": "https://www.jonzac-haute-saintonge.com/fiche-sit/mairie-de-nieul-le-virouil-6363160/",
+      "citation":"'Le service rendu des associations est vraiment énorme, et elles font partie du développement de la commune. En milieu rural en particulier, le bénévolat est important pour s’entraider et ne pas s’isoler.' "
+  },
+  {
+      "ville": "Saint-Marcial-De-Mirambeau",
+      "latitude": 45.38128,
+      "longitude": -0.59454,
+      "personne_interviewee": "le Maire Bruno Robert.",
+      "en_presentiel": true,
+      "label": "",
+      "lien": "https://www.saintmartialdemirambeau.fr/",
+      "citation": "'Il existe la solitude que peuvent ressentir les bénévoles et l'importance de les soutenir.'"
+  },
+  {
+      "ville": "Saint-Sorlin-de-Conac",
+      "latitude": 45.36832,
+      "longitude": -0.67874,
+      "personne_interviewee": "le Maire Cyril Penaud.",
+      "en_presentiel": false,
+      "label": "",
+      "lien": "https://www.jonzac-haute-saintonge.com/fiche-sit/mairie-de-saint-sorlin-de-conac-6364986/",
+      "citation":""
+  },
+  {
+      "ville": "Trizay",
+      "latitude": 45.88303,
+      "longitude": -0.89872,
+      "personne_interviewee": "le Maire Stanislas Caillaud et Mme Plissonneau, Mme Joëlle Morisseau et Mme Marie-Claude Coulongeat (Représentantes des Associations : Club Féminin, Gymnastique Volontaire et Représentante de la Bibliothèque Municipale).",
+      "en_presentiel": true,
+      "label": "Le trésor de Saintonge décerné au prieuré bénédictin de Trizay reconnaissant son importance historique et culturelle ainsi que Villes et Villages Fleuris (2 fleurs) ",
+      "lien": "https://www.trizay.com/",
+      "citation":"' Aujourd'hui, l'envie de s'engager est souvent motivée par le plaisir des échanges et des interactions sociales. '"
+  },
+  {
+      "ville": "Villars-Les-Bois",
+      "latitude": 45.79914,
+      "longitude": -0.43678,
+      "personne_interviewee": "Les élus Dominique Fays 2ème adjoint et Gaëlle Bernard, élue première adjointe chargée du budget, de la vie associative et de la communication au sein de la commune.",
+      "en_presentiel": true,
+      "label": "",
+      "lien": "https://www.communevillarslesbois.fr/",
+      "citation": " 'C'est une réalité, vous retrouvez les mêmes personnes dans plusieurs associations.' "
+  },
+  {
+      "ville": "Yves",
+      "latitude": 46.01917,
+      "longitude": -1.04818,
+      "personne_interviewee": "le Maire Didier Roblin et les adjoints de la mairie d'YVes.",
+      "en_presentiel": true,
+      "label": "Réserve Naturelle : La baie d’Yves est classée Réserve Naturelle depuis 1981. Villes et villages(1 fleur pour)",
+      "lien": "https://www.commune-yves.fr/",
+      "citation":" 'Le bénévolat offre un réconfort et un sentiment de sécurité en général, en cultivant l'empathie, la générosité et l'intérêt collectif. Tout ne s’achète pas.' "
+  },
+  {
+      "ville": "Andilly-Les-Marais",
+      "latitude": 46.25442,
+      "longitude": -1.02997,
+      "personne_interviewee": "Le Maire Sylvain Fagot.",
+      "en_presentiel": true,
+      "label": "Parc naturel régional du Marais poitevin, une zone protégée qui valorise la biodiversité et le patrimoine naturelainsi que le label Énergie Partagée.",
+      "lien": "https://www.andillylesmarais.fr/",
+      "citation": "' Prendre du temps sur sa vie privée pour s'engager pour les autres, ce n'est pas une démarche anodine. Le principal bénéfice du bénévolat, c'est le bonheur des autres.'"
+  },
+  {
+      "ville": "Villars-En-Pons",
+      "latitude": 45.60342,
+      "longitude": -0.62226,
+      "personne_interviewee": "Le Maire, Patrick Maxime.",
+      "en_presentiel": false,
+      "label": "",
+      "lien": "https://www.villarsenpons.fr/",
+      "citation": "'Le bénévolat disparaît petit à petit. C'est le rôle d'une mairie, d'aider les associations.'"
+  },
+  {
+      "ville": "Saint Marie de Ré",
+      "latitude": 46.14875,
+      "longitude": -1.31088,
+      "personne_interviewee": "Lilliane Droin, bénévole Engagée.",
+      "en_presentiel": false,
+      "lien": "https://www.larochelle.fr",
+      "citation":" 'Le bénévolat m’a permis de faire de belles rencontres.'"
+  },
+  {
+      "ville": "Le Gua",
+      "latitude": 45.71836,
+      "longitude": -0.95250,
+      "personne_interviewee": "Philippe Delmas, bénévole engagé au sein de 'soutien addiction alcool'.",
+      "en_presentiel": false,
+      "lien": "https://www.net1901.org/association/SOUTIEN-ADDICTION-ALCOOL,1001361611.htmlr",
+      "citation": "' On vit dans un monde où cela nous apprend à connaître la misère qu’il y a autour de nous.'"
+  },
+
+  {
+      "ville": "Paris",
+      "latitude": 48.89026,
+      "longitude": 2.37542,
+      "personne_interviewee": "Paul Sanyas, adhérent à l'appel",
+      "en_presentiel": false,
+      "lien": "https://www.lappel.org/",
+      "citation":""
+  },
+  {
+      "ville": "Saint Martin de Ré",
+      "latitude": 46.20128,
+      "longitude": -1.36807,
+      "personne_interviewee": "Association Ré Avenir",
+      "en_presentiel": false,
+      "lien": "https://re-avenir.fr/",
+      "citation":""
+  },
+  {
+      "ville": "La Rochelle",
+      "latitude": 46.13979,
+      "longitude": -1.1457,
+      "personne_interviewee": "Association Mouvement de la paix",
+      "en_presentiel": false,
+      "lien": "https://www.mvtpaix.org/wordpress/",
+      "citation":""
+  },
+  {
+      "ville": "La Rochelle",
+      "latitude": 46.16807,
+      "longitude": -1.18747,
+      "personne_interviewee": "Association C.L.A.R",
+      "en_presentiel": false,
+      "lien": "https://www.facebook.com/people/Association-clar/100083164967088/",
+      "citation":""
+  },
+  {
+      "ville": "La Rochelle, Centre Social de Tasdon",
+      "latitude": 46.14286,
+      "longitude": -1.14748,
+      "personne_interviewee": " Geneviève Rajeuneau, présidente du centre social de Tadon-Bonvin-Les Minimes depuis 4 ans.",
+      "en_presentiel": false,
+      "lien": "https://centresocial-tasdon-bongraine-lesminimes.fr/",
+      "citation":"'Ce qui m'a plu, c'était le côté humain'"
+  },
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  {
+      "ville": "Saint Cyr sur Loire",
+      "latitude": 47.40039,
+      "longitude": 0.66520,
+      "personne_interviewee": "Régine Hinet",
+      "en_presentiel": true,
+      "asso": "Conseillère municipale,réseau des ambassadeurs solidaires ",
+      "role": "acteur du projet",
+      "lien": "https://fondation-benevolat.fr/",
+      "citation":""
+  },
+  {
+      "ville": "Bourgneuf en Mauges",
+      "latitude": 46.16727,
+      "longitude": -1.02239,
+      "personne_interviewee": "Association LM2P",
+      "en_presentiel": false,
+      "asso": "Les Maires pour la planète",
+      "role": "acteur du projet",
+      "lien": "https://lesmairespourlaplanete.fr/",
+      "citation":""
+  },
+  {
+      "ville": "Bordeaux",
+      "latitude": 44.83978,
+      "longitude": -0.57617,
+      "personne_interviewee": "Gael",
+      "en_presentiel": false,
+      "asso": "So Coop",
+      "role": "acteur du projet",
+      "lien": "https://www.socooperation.org/",
+      "citation":""
+  },
+  {
+      "ville": "Paris",
+      "latitude": 48.88258,
+      "longitude": 2.33791,
+      "personne_interviewee": "Guillaume",
+      "en_presentiel": false,
+      "asso": "Fondation du bénévolat",
+      "role": "acteur du projet",
+      "lien": "https://fondation-benevolat.fr/",
+      "citation":""
+  },
+  {
+      "ville": "La Rochelle",
+      "latitude": 46.13979,
+      "longitude": -1.1457,
+      "personne_interviewee": "Pauget Jean Cristophe",
+      "en_presentiel": false,
+      "asso": "Avenir En Héritage",
+      "role": "acteur du projet",
+      "lien": "https://www.avenirenheritage.com/",
+      "citation":""
+  }
+]

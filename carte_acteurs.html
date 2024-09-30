@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte des communes engagées</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #a2cacc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: 'Lora', serif;
+            text-align: center;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        #main-content {
+            display: flex;
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        #map {
+            flex: 3;
+            height: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+
+        #presentation {
+            flex: 1;
+            background-color: #f4c278;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #portraits {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #ed8f67;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .portrait {
+            width: 80px;
+            height: 80px;
+            background-color: #fff;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #5e8f90;
+        }
+
+        .portrait img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .popup {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .popup h2 {
+            font-family: 'Lora', serif;
+            margin: 0;
+            font-size: 16px;
+            color: #5e8f90;
+        }
+
+        .popup p {
+            margin: 5px 0;
+        }
+
+        .leaflet-container {
+            background: #fff;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Carte des participants au projet "Communes Engagées"</h1>
+    <div id="container">
+        <div id="main-content">
+            <div id="map"></div>
+            <div id="presentation">
+                <center><h2>Présentation</h2></center>
+                <p>Le projet "Communes Engagées" met en lumière le rôle essentiel des bénévoles dans la réalisation des
+                    Objectifs de
+                    Développement Durable (ODD) en démontrant leur impact quotidien. <br> <br> Il vise à sensibiliser
+                    les collectivités locales
+                    aux ODD. <br> L’objectif est de mobiliser les bénévoles et les collectivités pour promouvoir
+                    efficacement les ODD à
+                    l’échelle locale.<br> <br>Cette carte recense les associations, bénévoles et communes engagées ayant pris part au projet ainsi
+                    que le parcours des acteurs
+                    au sein du territoire.
+
+
+
+
+
+
+                </p>
+            </div>
+        </div>
+        <div id="portraits">
+            <div class="portrait">
+                <a href="https://www.avenirenheritage.com/"target="_blank">
+                    <img src="aeh.png" alt="Interviewé 1">
+                </a>
+            </div>
+            <div class="portrait">
+                <a href="https://fondation-benevolat.fr/" target="_blank">
+                    <img src="fondation.png" alt="Interviewé 2">
+                </a>
+            </div>
+            <div class="portrait">
+                <a href="https://www.socooperation.org/" target="_blank">
+                    <img src="so coop.png" alt="Interviewé 3">
+                </a>
+            </div>
+            <div class="portrait">
+                <a href="https://lesmairespourlaplanete.fr/" target="_blank">
+                    <img src="Les-maires-pour-la-planete-2.jpg" alt="Interviewé 4">
+                </a>
+            </div>
+            <!-- Ajouter plus de portraits si nécessaire -->
+        </div>
+
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Fetch API -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const map = L.map('map').setView([46.160329, -1.151139], 13);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            const laRochelleCoords = [46.166667, -1.150000];
+
+            L.marker(laRochelleCoords).addTo(map)
+                .bindPopup('<div class="popup"><h2>La Rochelle</h2></div>');
+
+            fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach(entry => {
+                        const marker = L.marker([entry.latitude, entry.longitude]).addTo(map);
+                        let popupContent = `
+                            <div class="popup">
+                                <h2>${entry.ville}</h2>
+                                <p><strong>Personne(s) interviewé(e.s):</strong> ${entry.personne_interviewee}</p>
+                                ${entry.asso ? `<p><strong>Association :</strong> ${entry.asso}</p>` : ''}
+                                ${entry.role ? `<p><strong>Rôle :</strong> ${entry.role}</p>` : ''}
+                                ${entry.citation ? `<p><strong>Extrait de l'interview : </strong> ${entry.citation}</p>` : ''}
+                                ${entry.label ? `<p><strong>Labels :</strong> ${entry.label}</p>` : ''}
+                                ${entry.lien ? `<p><strong>Site informatif :</strong> <a href="${entry.lien}" target="_blank">${entry.lien}</a></p>` : ''}
+                            </div>
+                        `;
+                        marker.bindPopup(popupContent);
+
+                        if (entry.en_presentiel) {
+                            L.polyline([laRochelleCoords, [entry.latitude, entry.longitude]], {
+                                color: '#f56c42',
+                                weight: 2
+                            }).addTo(map);
+                        }
+                    });
+                })
+                .catch(error => console.error('Erreur lors du chargement du fichier data.json:', error));
+        });
+    </script>
+</body>
+
+</html>
